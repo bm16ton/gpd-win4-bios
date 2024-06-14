@@ -1,0 +1,747 @@
+;;======================================================
+;;     BIOS Release Notice for ARP27
+;;======================================================
+Release Date:
+         2024/4/18
+
+BIOS Version:
+        0.58
+
+EC Version:
+        0.21
+
+BIOS Description:
+1. Fix the issue that system can not recovery. 
+
+;;======================================================
+Release Date:
+         2024/3/12
+
+BIOS Version:
+        0.57
+
+EC Version:
+        0.21
+
+BIOS Description:
+1. Update the PI1.1.0.2b_023
+Notify: 
+  Update BIOS, please delete /reboot option, and add /q /capsule. 
+
+;;======================================================
+Release Date:
+         2024/3/12
+
+BIOS Version:
+        0.56
+
+EC Version:
+        0.21
+
+BIOS Description:
+1. Enable the IPU.
+2. Recode for the item of "Power Mode" function.
+
+;;======================================================
+Release Date:
+         2024/3/12
+
+BIOS Version:
+        0.55
+
+EC Version:
+        0.21
+
+BIOS Description:
+1. Add the item of "Power Mode" in bios setup for request.
+   - This item default set as auto
+   - Set the item  "AC Mode" that can enhance the performance.
+
+;;======================================================
+Release Date:
+         2024/3/7
+
+BIOS Version:
+        0.54
+
+EC Version:
+        0.21
+
+BIOS Description:
+1. Fix the circle of Windows loading do not smooth.
+2. change the GYRO_HID to BMI0260.
+
+;;======================================================
+Release Date:
+         2024/2/27
+
+BIOS Version:
+        0.53
+
+EC Version:
+        0.20
+
+BIOS Description:
+1. BIOS remove some unused items in bios setup.
+;;======================================================
+Release Date:
+         2024/1/4
+
+BIOS Version:
+        0.52
+
+EC Version:
+        0.20
+
+BIOS Description:
+1. Set The Ipu as disable
+2. Set IGPU ASPM as Enable
+
+;;======================================================
+Release Date:
+         2023/12/28
+
+BIOS Version:
+        0.51
+
+EC Version:
+        0.20
+
+BIOS Description:
+1. Update the PI to 5.29_1AZIP_PI1.1.0.2_021
+2. Update the TSE module 1292
+3. Update the Logo file.
+
+;;======================================================
+Release Date:
+         2023/12/26
+
+BIOS Version:
+        0.50
+
+EC Version:
+        0.20
+
+BIOS Description:
+1. Update the PI to 5.29_1AZIP_PI1.1.0.1c_020.1
+2. fix the issue that during the loading process of the Ubuntu system has error
+  (Failure creating named object [\_SB.PCIO.GPP5._PRW]/[\_SB.PCIO.GPP6._PRW]) and [\_SB.PCIO.GPP7.WWAN])
+
+;;======================================================
+Release Date:
+         2023/12/8
+
+BIOS Version:
+        0.49
+
+EC Version:
+        0.20
+
+EC Description:
+1. Fix pop sound when power on.
+
+;;======================================================
+Release Date:
+         2023/12/7
+
+BIOS Version:
+        0.48
+
+EC Version:
+        0.19
+
+BIOS Description:
+1. Update the verb table for the Mic can not be detected when plug in the headphone.
+
+;;======================================================
+Release Date:
+         2023/09/21
+
+BIOS Version:
+        0.47
+
+EC Version:
+        0.19
+
+BIOS Description:
+1. Update EC for no sound issue.
+EC Description:
+1. Modify GPC4 setting for no sound.
+
+;;======================================================
+Release Date:
+         2023/09/19
+
+BIOS Version:
+        0.46
+
+EC Version:
+        0.18
+
+BIOS Description:
+1. Update the BIOS for the system will enter MS if plug in the OCU link
+   - remove notify power botton code (OCUlink waken GPIO24).
+
+;;======================================================
+Release Date:
+         2023/09/13
+
+BIOS Version:
+        0.45
+
+EC Version:
+        0.18
+
+BIOS Description:
+1. Update the BIOS PI to 1.0.0.2B_016
+
+;;======================================================
+Release Date:
+         2023/09/05
+
+BIOS Version:
+        0.44
+
+EC Version:
+        0.18
+
+BIOS Description:
+1. Update the BIOS PI to 1.0.0.2A_015
+2. Set the SSID same as CRB
+
+;;======================================================
+Release Date:
+         2023/08/30
+
+BIOS Version:
+        0.43
+
+EC Version:
+        0.18
+
+BIOS Description:
+1. BIOS disable the OCU link Wake up
+2. sync with EC for Optimize handle power control when MS 
+EC Description:
+1. Optimize handle power control when MS.
+
+;;======================================================
+Release Date:
+         2023/08/24
+
+BIOS Version:
+        0.42
+
+EC Version:
+        0.17
+
+BIOS Description:
+1. RollBack the PI to 1.0.0.1g
+2. Update the EC.
+   - Enable MIPI FW update function.
+
+
+;;======================================================
+Release Date:
+         2023/08/11
+
+BIOS Version:
+        0.41
+
+EC Version:
+        0.16
+
+BIOS Description:
+1. Update the PI 1.0.0.2
+
+;;======================================================
+Release Date:
+         2023/08/02
+
+BIOS Version:
+        0.40
+
+EC Version:
+        0.16
+
+BIOS Description:
+- Modify some Power settings.
+  - PcdMsgSetSustainedPowerLimit as 18
+  - PcdMsgSetFastPPTLimit as 22
+  - PcdMsgSetSlowPPTLimit as 24
+
+;;======================================================
+Release Date:
+         2023/07/27
+
+BIOS Version:
+        0.39
+
+EC Version:
+        0.16
+
+BIOS Description:
+- Update EC for Audio noise.
+
+;;======================================================
+Release Date:
+         2023/07/121
+
+BIOS Version:
+        0.38
+
+EC Version:
+        0.15
+
+BIOS Description:
+- Change the GFX memory size according memory size.
+  -> GFX Memory size is 16G, if memory is 64G
+  -> GFX memory size is 8G, if memory is 32G
+  -> GFX memory size is 3G, if memory is 16G
+- Seperate the XBOX flag for MS feature. 
+- Update EC version to 015.
+-Remove some usused code.
+
+;;======================================================
+Release Date:
+         2023/07/17
+
+BIOS Version:
+        0.37
+
+EC Version:
+        0.14
+
+BIOS Description:
+- Change the UMA Frame buffer Size show policy according customer
+- Fix the issue that the system can not recovery if press the "TAB"
+- Update EC to 014
+
+;;======================================================
+Release Date:
+         2023/07/10
+
+BIOS Version:
+        0.36
+
+EC Version:
+        0.12
+
+BIOS Description:
+- Change code that enter S4 from MS when battery drain over 5% during MS 
+
+;;======================================================
+Release Date:
+         2023/07/10
+
+BIOS Version:
+        0.35
+
+EC Version:
+        0.12
+
+BIOS Description:
+- Change the Audio SSID.
+
+;;======================================================
+Release Date:
+         2023/07/07
+
+BIOS Version:
+        0.34
+
+EC Version:
+        0.12
+
+BIOS Description:
+- Fix the system device detect sound after MS.
+- Update EC for thermal before MS.
+
+;;======================================================
+Release Date:
+         2023/07/06
+
+BIOS Version:
+        0.33
+
+EC Version:
+        0.11
+
+BIOS Description:
+- fix update bios policy issue.
+
+;;======================================================
+Release Date:
+         2023/07/06
+
+BIOS Version:
+        0.32
+
+EC Version:
+        0.11
+
+BIOS Description:
+- fix the SSD GEN3 when DC mode
+- BASE_BOARD_PRODUCT_NAME change to G1618-04
+
+;;======================================================
+Release Date:
+         2023/07/06
+
+BIOS Version:
+        0.31
+
+EC Version:
+        0.11
+
+BIOS Description:
+- Update BIOS policy 
+  - AC or battery over 30%， then can update bios or smbios.
+- Update EC version to 011.
+
+;;======================================================
+Release Date:
+         2023/06/19
+
+BIOS Version:
+        0.30
+
+EC Version:
+        0.09
+
+BIOS Description:
+- code for 28 OCU link issue.
+  - add the code for OCU link W/A code. (default is GEN3, When Gen4, set the turbo as disable)
+- Code SV (Set the OEM_SETUP_ADVANCED_SUPPORT as 1, 
+          OEM_GFX_MEM_SIZE_SUPPORT as 0, OEM_GFXMEM_SIZE_BY_MEMORY_SUPPORT as 1)
+
+;;======================================================
+Release Date:
+         2023/06/15
+
+BIOS Version:
+        0.29
+
+EC Version:
+        0.09
+
+BIOS Description:
+-update the verbtable for DTS.
+
+;;======================================================
+Release Date:
+         2023/05/31
+
+BIOS Version:
+        0.28
+
+EC Version:
+        0.09
+
+BIOS Description:
+-Disable the SSD ASPM when the device is BIWIN.
+-Update the EC.
+
+;;======================================================
+Release Date:
+         2023/05/31
+
+BIOS Version:
+        0.27
+
+EC Version:
+        0.08
+
+BIOS Description:
+-Update the CRB to 1.0.0.1g_012
+;;======================================================
+Release Date:
+         2023/05/17
+
+BIOS Version:
+        0.26
+
+EC Version:
+        0.08
+
+BIOS Description:
+-Set the memory as 6400
+-Disable the ASPM L1.1 L1.2
+-Set the XBOX USB port as Onboard.
+
+;;======================================================
+Release Date:
+         2023/05/12
+
+BIOS Version:
+        0.24
+
+EC Version:
+        0.08
+
+BIOS Description:
+-Update the EC 08
+-Update the PI 1.0.0.1G
+
+;;======================================================
+Release Date:
+         2023/05/11
+
+BIOS Version:
+        0.23
+
+EC Version:
+        0.07
+
+BIOS Description:
+-revise OC Link settings for function 
+
+;;======================================================
+Release Date:
+         2023/05/06
+
+BIOS Version:
+        0.22
+
+EC Version:
+        0.07
+
+BIOS Description:
+- support PcdP3TLimitCtrl and set PcdP3TLimit as 150000
+- Update EC for MS (add power switch)
+- CPM_SIGNATURE_FW_SKIP_PCIE_TRAINING and uPep.asl for SSD MS (port change to 16~19)
+
+;;======================================================
+Release Date:
+         2023/05/06
+
+BIOS Version:
+        0.21
+
+EC Version:
+        0.05
+
+BIOS Description:
+- change the SSD port to 16~19 (x4)
+- Set FAN_CONTROLLER_BIT to 0 for using GPIO85 as GPIO Input follow BIOS guide
+
+;;======================================================
+Release Date:
+         2023/04/28
+
+BIOS Version:
+        0.20
+
+EC Version:
+        0.05
+
+BIOS Description:
+-Update the PI 1.0.0.1F
+
+;;======================================================
+Release Date:
+         2023/04/21
+
+BIOS Version:
+        0.19
+
+EC Version:
+        0.05
+
+BIOS Description:
+-update the EC 005.
+  - Support AW87559 Audio amplifier function.
+
+;;======================================================
+Release Date:
+         2023/04/19
+
+BIOS Version:
+        0.18
+
+EC Version:
+        0.04
+
+BIOS Description:
+-Rollback ABL FW to 51 for S4 hang issue
+-Change ACP SSID to CODEC SSID
+
+;;======================================================
+Release Date:
+         2023/04/14
+
+BIOS Version:
+        0.16
+
+EC Version:
+        0.04
+
+BIOS Description:
+- Update the PI 1.0.0.1E
+
+;;======================================================
+Release Date:
+         2023/04/10
+
+BIOS Version:
+        0.15
+
+EC Version:
+        0.04
+
+BIOS Description:
+- Update the PI 1.0.0.1D
+
+;;======================================================
+Release Date:
+         2023/04/06
+
+BIOS Version:
+        0.14
+
+EC Version:
+        0.04
+
+BIOS Description:
+- rollback the Verb table(013)
+- update the ASL for touch panel position issue.
+- update the EC to version 04
+;;======================================================
+Release Date:
+         2023/03/31
+
+BIOS Version:
+        0.12
+
+EC Version:
+        0.02
+
+BIOS Description:
+- Update the Verb table
+
+;;======================================================
+Release Date:
+         2023/03/230
+
+BIOS Version:
+        0.11
+
+EC Version:
+        0.02
+
+BIOS Description:
+- change the lowest brightness to 3
+- Adjust the asl for USB port
+- Update the Update the PI 1001C1
+
+;;======================================================
+Release Date:
+         2023/03/24
+
+BIOS Version:
+        0.10
+
+EC Version:
+        0.02
+
+BIOS Description:
+- Update the PI 1001C
+- Change the GYRO_HID to BMI0160
+- Other code need to change just for ARP27 request
+
+;;======================================================
+Release Date:
+         2023/03/24
+
+BIOS Version:
+        0.09 （08version just update bios version）
+
+EC Version:
+        0.02
+
+BIOS Description:
+- Update the GPD POST Logo
+- The TSP reset GPIO 135 pin Pull Down-->delay 100MS-->Pull Up
+
+;;======================================================
+Release Date:
+         2023/03/15
+
+BIOS Version:
+        0.07
+
+EC Version:
+        0.02
+
+BIOS Description:
+-Update PI 1.0.0.1B
+
+;;======================================================
+Release Date:
+         2023/03/13
+
+BIOS Version:
+        0.06
+
+EC Version:
+        0.02
+
+BIOS Description:
+-Fix touch panel not work when S4 resume
+-Update power setting to 18/22/24W
+
+;;======================================================
+Release Date:
+         2023/03/10
+
+BIOS Version:
+        0.05
+
+EC Version:
+        0.01
+
+BIOS Description:
+-Update PI 1.0.0.1A
+
+;;======================================================
+Release Date:
+         2023/03/07
+
+BIOS Version:
+        0.04
+
+EC Version:
+        0.01
+
+BIOS Description:
+-Update verbtable
+-Update DXIO for OC link
+-Add setup override string
+-Change hotkey for GPD
+
+;;======================================================
+Release Date:
+         2023/03/03
+
+BIOS Version:
+        0.023
+
+EC Version:
+        0.01
+
+BIOS Description:
+--Update touchpanel I2C address and HID
+;;======================================================
+Release Date:
+         2023/03/02
+
+BIOS Version:
+        0.02
+
+EC Version:
+        0.01
+
+BIOS Description:
+--Update verbtable
+
+
